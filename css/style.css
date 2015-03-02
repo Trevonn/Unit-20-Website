@@ -142,7 +142,7 @@ body {
 .page-footer {
 	margin-top: -45px;
 	line-height: 45px;
-	border-top: 5px solid #09f;
+	box-shadow: 0 -5px #09f;
 	font-weight: 500;
 	width: auto;
 	overflow: auto;
