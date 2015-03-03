@@ -37,7 +37,7 @@ body {
 }
 
 /*****************\
-		$Navigation
+	$Navigation
 \*****************/
 
 .page-header {
@@ -101,7 +101,7 @@ body {
 }
 
 /****************\
-		$Cotent
+	$Cotent
 \****************/
 
 .content-wrap {
@@ -123,20 +123,37 @@ body {
 }
 
 .title {
-	font-size: 24px;
-	padding-bottom: 20px;
-	border-bottom: 2px solid #ccc;
+	font-size: 24px; 
+	margin-bottom: 20px;
 }
 
 .text-block {
-	margin: 20px auto;
+	margin: 0 auto 20px;
 	line-height: 1.625;
 }
 
 .text-block:last-of-type,
 .text-block:first-of-type {
-	margin-top: 0;
 	margin-bottom: 0;
+}
+
+.text-img {
+	margin-bottom: 20px;
+}
+
+.code {
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #263237;
+	color: #fff;
+}
+
+.code-indent {
+	padding-left: 20px;
+}
+
+.text-bold {
+	font-weight: bold;
 }
 
 .page-footer {
@@ -196,8 +213,17 @@ body {
 	}
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 960px) {
 	.page-logo {
-		margin-left: 5px;
+		margin-left: 21px;
 	}
+	
+	.nav-link-cont:last-of-type {
+		margin-right: 21px;
+	}
+	
+	.content-wrap {
+		width: 100%;
+	}
+
 }
