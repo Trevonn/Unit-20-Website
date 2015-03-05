@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500,100,300" rel="stylesheet">
+		<link href="css/normalize.min.css"  rel="stylesheet">
+		<link href="css/noven.css"          rel="stylesheet">
+		<link href="css/style.css"          rel="stylesheet">
+		<title>Title</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="page-header">
+				<div class="inner-header">
+					<a href="index.html" class="page-logo">Logo</a>
+					<div class="page-nav">
+						<li class="nav-link-cont"><a href="index.html" class="nav-link">Home</a></li>
+						<li class="nav-link-cont"><a href="htmlcss.html" class="nav-link">HTML &amp; CSS</a></li>
+						<li class="nav-link-cont"><a href="stylesheets.html" class="nav-link current-page">Stylesheets</a></li>
+						<li class="nav-link-cont"><a href="page4.html" class="nav-link">Link 4</a></li>
+					</div>
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="content">
+					<div class="text-block-cont">
+						<div class="title bold">Internal Stylesheets</div>
+						<div class="text-block">Internal Stylesheets are <span class="bold">CSS</span> styles emebeded within html tags. For example the follwing text will be red. <span style="color: red;">Red Text</span>.</div>
+						<div class="title bold">Code Example</div>
+						<div class="code round">&lt;span&gt;style="color: red;">Red Text&lt;/span&gt;</div>
+						<div class="title bold">Embeded Stylesheets</div>
+						<div class="text-block">Embeded Stylesheets are <span class="bold">CSS</span> styles that are placed in the <span class="bold">header tag</span> of the <span class="bold">HTML</span> document.</div>
+						<div class="code round">
+							<p class="bold">&lt;style&gt;</p>
+								<p class="bold code-indent">p {</p>
+								<p class="bold code-indent-2">color: red;</p>
+								<p class="bold code-indent">}</p>
+							<p class="bold">&lt;/style&gt;</p>
+						</div>
+						<div class="title bold">External Stylsheets</div>
+						<div class="text-block">External Stylsheets are external css files linked in the header of the HTML document.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-footer">&copy; 2015 Trevonn</div>
+	</body>
+</html>
