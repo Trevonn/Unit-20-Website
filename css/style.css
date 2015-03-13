@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /********************\
-				Contents
+			Contents
 
 1. General
 2. Navigation
@@ -10,9 +10,7 @@
 
 \********************/
 
-/**************\
-		$General
-\**************/
+/* $General */
 
 html,
 body {
@@ -28,17 +26,16 @@ body {
 	line-height: 1;
 	color: #fff;
 	font-size: 18px;
+	font-size: 1.8rem;
 	background-color: #e6e6e6;
 }
 
-.main {
+.page {
 	min-height: 100%;
 	overflow: auto;
 }
 
-/*****************\
-	$Navigation
-\*****************/
+/* $Navigation */
 
 .page-header {
 	background-color: #263237;
@@ -86,9 +83,7 @@ body {
 .nav-link {
 	display: block;
 	padding: 21px;
-	font-size: 18px;
-	font-weight: 500;
-	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .nav-link:hover,
@@ -99,21 +94,18 @@ body {
 	background-color: #09f;
 }
 
-/****************\
-	$Cotent
-\****************/
 
-.content-wrap {
+/* $Cotent */
+
+
+.content {
 	width: 960px;
 	margin: 0 auto 72px;
 	overflow: auto;
 	color: #444;
-}
-
-.content {
-	width: auto;
-	padding: 20px;
+	padding: 20px 20px 0;
 	background-color: #fff;
+	overflow: hidden;
 }
 
 .text-block-cont {
@@ -121,24 +113,33 @@ body {
 	margin: 0 auto;
 }
 
-.text-block-cont > div,
-.text-block-cont > img {
+.text-block-cont > * {
 	margin-bottom: 20px;
 }
 
 .title {
+	font-size: 32px;
+	font-size: 3.2rem;
+}
+
+h1.title {
+	text-align: center;
+}
+
+h3.title {
 	font-size: 24px;
+	font-size: 2.4rem;
 }
 
 .text-block {
-	margin: 0 auto;
 	line-height: 1.625;
 }
 
 .code {
 	padding: 20px;
-	background-color: #263237;
+	line-height: 1.5;
 	color: #fff;
+	background-color: #263237;
 }
 
 .code-indent {
@@ -149,15 +150,11 @@ body {
 	padding-left: 40px;
 }
 
-.text-block:last-of-type {
-	margin-bottom: 0;
-}
-
 .bold {
 	font-weight: bold;
 }
 
-.page-footer {
+.footer {
 	margin-top: -45px;
 	line-height: 45px;
 	box-shadow: 0 -5px #09f;

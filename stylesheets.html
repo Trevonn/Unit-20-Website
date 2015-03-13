@@ -7,10 +7,10 @@
 		<link href="css/normalize.min.css"  rel="stylesheet">
 		<link href="css/noven.css"          rel="stylesheet">
 		<link href="css/style.css"          rel="stylesheet">
-		<title>Title</title>
+		<title>Stylesheets</title>
 	</head>
 	<body>
-		<div class="main">
+		<div class="page">
 			<div class="page-header">
 				<div class="inner-header">
 					<a href="index.html" class="page-logo">Logo</a>
@@ -18,32 +18,45 @@
 						<li class="nav-link-cont"><a href="index.html" class="nav-link">Home</a></li>
 						<li class="nav-link-cont"><a href="htmlcss.html" class="nav-link">HTML &amp; CSS</a></li>
 						<li class="nav-link-cont"><a href="stylesheets.html" class="nav-link current-page">Stylesheets</a></li>
-						<li class="nav-link-cont"><a href="page4.html" class="nav-link">Link 4</a></li>
+						<li class="nav-link-cont"><a href="boxmodel.html" class="nav-link">Box Model</a></li>
 					</div>
 				</div>
 			</div>
-			<div class="content-wrap">
-				<div class="content">
-					<div class="text-block-cont">
-						<div class="title bold">Internal Stylesheets</div>
-						<div class="text-block">Internal Stylesheets are <span class="bold">CSS</span> styles emebeded within html tags. For example the follwing text will be red. <span style="color: red;">Red Text</span>.</div>
-						<div class="title bold">Code Example</div>
-						<div class="code round">&lt;span&gt;style="color: red;">Red Text&lt;/span&gt;</div>
-						<div class="title bold">Embeded Stylesheets</div>
-						<div class="text-block">Embeded Stylesheets are <span class="bold">CSS</span> styles that are placed in the <span class="bold">header tag</span> of the <span class="bold">HTML</span> document.</div>
-						<div class="code round">
-							<p class="bold">&lt;style&gt;</p>
-								<p class="bold code-indent">p {</p>
-								<p class="bold code-indent-2">color: red;</p>
-								<p class="bold code-indent">}</p>
-							<p class="bold">&lt;/style&gt;</p>
-						</div>
-						<div class="title bold">External Stylsheets</div>
-						<div class="text-block">External Stylsheets are external css files linked in the header of the HTML document.</div>
+			<div class="content">
+				<div class="text-block-cont">
+					<h2 class="title bold">CSS Stylesheets</h2>
+					<p class="text-block">There a three different ways to add CSS stylesheets to a page. Each method has it's advantages and disadvantages. I will explain in detail each method below.</p>
+					<h2 class="title bold">Internal Stylesheets</h2>
+					<p class="text-block">Internal Stylesheets are CSS styles emebeded within html tags. For example the follwing text will be red. <span style="color: red;">Red Text.</span></p>
+					<h3 class="title">Code Example</h3>
+					<div class="code round">&lt;span&gt;style="color: red;"&gt;Red Text&lt;/span&gt;</div>
+					<p class="text-block">This method of applying CSS Styles is very inefficient because if you want to apply the CSS Styles to multiple instances of the same element the style must appear in the every instance of the element.</p>
+					<h2 class="title bold">Embeded Stylesheets</h2>
+					<p class="text-block">Embeded Stylesheets are CSS styles that are placed in the header tag of the HTML document.</p>
+					<h3 class="title">Code Example</h3>
+					<div class="code round">
+						<p>&lt;style&gt;</p>
+							<p class="code-indent">p &#123;</p>
+							<p class="code-indent-2">color: red;</p>
+							<p class="code-indent">&#125;</p>
+						<p>&lt;/style&gt;</p>
 					</div>
+					<p class="text-block">This method of adding CSS Styles to a page is only beneficial on one page websites. This is because when a web page is loaded it will request the website's resources from the server. If the website uses an external CSS stylesheet there will be two requests one for the HTML file and one for the CSS file. Whereas with an embedded stylesheet there will only be one request. This means the webpage will load faster because there are fewer requests.</p>
+					<h2 class="title bold">External Stylsheets</h2>
+					<p class="text-block">External Stylsheets are external css files linked in the header of the HTML document.</p>
+					<h3 class="title">Code Example</h3>
+					<div class="code round">&lt;link href="css/style.css" rel="stylesheet"&gt;</div>
+					<div class="code round">
+						<p>@charset "utf-8";</p>
+						<p> </p>
+						<p>p &#123;</p>
+						<p class="code-indent">color: red;</p>
+						<p>&#125;</p>
+					</div>
+					<p class="text-block">This is an example of a externally linked stylesheet. Externally linked stylsheets are better for websites with multiple pages because each page is using the same stylesheet. This saves space and bandwidth because you don't have to copy the styles onto each webpage.</p>
 				</div>
 			</div>
 		</div>
-		<div class="page-footer">&copy; 2015 Trevonn</div>
+		<div class="footer">&copy; 2015 Trevonn</div>
 	</body>
 </html>
